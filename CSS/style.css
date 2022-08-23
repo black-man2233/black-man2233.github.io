@@ -80,115 +80,6 @@ a.nav-btn{
 Home Page
 ============= */
 
-/* Text Changing when hovering */
-
-.label-hello:after {
-    content: "Hello";
-}
-
-.label-hello:hover:after {
-    content: "About";
-    color: #f95959;
-
-}
-
-.label-iam:after {
-    content: "I am";
-}
-
-.label-iam:hover:after {
-    content: "Projects";
-    color: #455d7a;
-}
-
-.label-kevin:after {
-    content: "Kevin";
-}
-
-.label-kevin:hover:after {
-    content: "Contact";
-    color: #233142;
-}
-
-/* Collors */
-.text-color-white {
-    color: white;
-    texr-color: white;
-}
-
-.text-color-red {
-    color: #f95959;
-
-}
-
-.text-color-black {
-    color: #000000;
-}
-
-.text-color-gray {
-    color: #888888;
-}
-
-.home-text {
-    display: block;
-    font-size: 16px;
-    font-size: 4vw;
-    position: fixed;
-    top: 10%;
-    ;
-    left: 25%;
-
-}
-
-
-
-.home {
-    background: #000000;
-    background-color: black;
-    background-size: auto;
-    background-position-x: center ;
-    background-repeat: no-repeat;
-
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
-}
-
-
-.home-b{
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  position: absolute;
-}
-
-
-.hide-text-block {
-    position: relative;
-    display: block;
-    overflow: visible;
-}
-
-.home-resume {
-    font-size: 100%;
-    text-align: center;
-}
-
-.meoriginalpic {
-    background-image: url(/Pictures/meoriginal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: fixed;
-}
-
-
 
 /* ============= About me Page ============= */
 
@@ -340,15 +231,43 @@ a button:hover {
 /* =====================================
   Contact me Page
 =============================== */
+
+.main-contact{
+  width: 100%;
+  max-width: 95%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 100px;
+
+}
+
+.main-contact img{
+  min-width: 10%;
+  image-orientation: portrait;
+  border-radius:100%;
+
+}
+
+
+
+.contact-body{
+  padding: 10px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+
 .cc{
 
   font-size:30px;
   font-family: 'Arvo', serif;
   margin-bottom:33px;
-
-
-
+  color:white;
 }
+
 
 .cm{
   font-size:40px;
@@ -357,6 +276,7 @@ a button:hover {
   text-align:center;
   text-transform:uppercase;
   text-shadow: capitalize;
+  color:white;
 }
 
 
@@ -398,32 +318,6 @@ a button:hover {
   font-size: 30px !important;
   font-weight: bold;
 
-}
-
-.main-contact img{
-  min-width: 10%;
-  image-orientation: portrait;
-  border-radius:100%;
-
-}
-
-
-.main-contact{
-  width: 100%;
-  max-width: 95%;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 100px;
-
-}
-
-.contact-body{
-  padding: 10px;
-  margin: 0px;
-  box-sizing: border-box;
-  display: flex;
 }
 
 
