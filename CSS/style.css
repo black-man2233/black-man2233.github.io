@@ -1,0 +1,526 @@
+
+*{
+  margin: 0px;
+  padding:0px;
+}
+/* =====================================
+Navigationbar
+====================================> */
+
+.content{
+  padding-top: 100px;
+
+  margin-bottom: 100px;
+}
+
+
+a.nav-btn{
+  color: White !important;
+  background:#a21232;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 30px;
+
+  border-radius: 30px;
+  transition: .4s
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  z-index: 10000;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+
+
+
+}
+
+
+.menu a{
+  margin: 10px;
+  /* font-size:20px; */
+}
+
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+ flex-direction: row;
+ flex-wrap: wrap;
+
+}
+
+.menu {
+    background-image: aliceblue;
+}
+
+.menu a:hover {
+ transition: 0.3s ease;
+ background: transparent;
+ border: 2px solid #dece9c;
+ cursor: pointer;
+ font-size:15px;
+}
+
+.menu li{
+  padding: 5px 14px;
+}
+
+
+
+
+/* =================================================================*/
+
+
+/* =============
+Home Page
+============= */
+
+/* Text Changing when hovering */
+
+.label-hello:after {
+    content: "Hello";
+}
+
+.label-hello:hover:after {
+    content: "About";
+    color: #f95959;
+
+}
+
+.label-iam:after {
+    content: "I am";
+}
+
+.label-iam:hover:after {
+    content: "Projects";
+    color: #455d7a;
+}
+
+.label-kevin:after {
+    content: "Kevin";
+}
+
+.label-kevin:hover:after {
+    content: "Contact";
+    color: #233142;
+}
+
+/* Collors */
+.text-color-white {
+    color: white;
+    texr-color: white;
+}
+
+.text-color-red {
+    color: #f95959;
+
+}
+
+.text-color-black {
+    color: #000000;
+}
+
+.text-color-gray {
+    color: #888888;
+}
+
+.home-text {
+    display: block;
+    font-size: 16px;
+    font-size: 4vw;
+    position: fixed;
+    top: 10%;
+    ;
+    left: 25%;
+
+}
+
+
+
+.home {
+    background: #000000;
+    background-color: black;
+    background-size: auto;
+    background-position-x: center ;
+    background-repeat: no-repeat;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+
+.home-b{
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  position: absolute;
+}
+
+
+.hide-text-block {
+    position: relative;
+    display: block;
+    overflow: visible;
+}
+
+.home-resume {
+    font-size: 100%;
+    text-align: center;
+}
+
+.meoriginalpic {
+    background-image: url(/Pictures/meoriginal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: fixed;
+}
+
+
+
+/* ============= About me Page ============= */
+
+/* ========================
+Page arrangement
+==========================*/
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.main-about {
+  width: fixed;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 100px
+}
+
+.undragables {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.about-body {
+  padding: 10px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* ========================
+      Background
+==========================*/
+
+.website-background, .navbar{
+  background-color: #1a1831;
+}
+
+.about {
+  width: 100%;
+  padding: 0;
+
+}
+
+/* ========================
+            Picture
+==========================*/
+.main-about img {
+  min-width: 50%;
+  image-orientation: portrait;
+
+
+}
+
+/* ========================
+        All text
+==========================*/
+
+.about-text {
+  width: 100%;
+}
+
+/* ========================
+  Title
+==========================*/
+.about-text h1 {
+  color: white;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-underline-position: below;
+  width 120px;
+}
+
+/* ========================
+    subtitle
+==========================*/
+.about-text h5 {
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+
+}
+
+/* ========================
+    subtitle in red
+==========================*/
+span {
+  color: #fc3a52;
+
+}
+span:hover {
+  bordertop
+  border-color: gray
+
+}
+
+/* ========================
+    About me description
+==========================*/
+
+.about-text p {
+  color: #e3e3e3;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 22px;
+  margin-bottom: 28px;
+  margin-top: 28px;
+  max-width: 60rem;
+  padding: 0 1em;
+  min-width: 50%;
+}
+
+/* ========================
+        Buton
+==========================*/
+
+button {
+  background: #a21232;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  font-size:15px;
+  ;
+}
+
+a button:hover {
+  background: transparent;
+  border: 2px solid #dece9c;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+
+/* =====================================
+  Contact me Page
+=============================== */
+.cc{
+
+  font-size:30px;
+  font-family: 'Arvo', serif;
+  margin-bottom:33px;
+
+
+
+}
+
+.cm{
+  font-size:40px;
+  margin-bottom:22px;
+  font-family: 'DynaPuff', cursive;
+  text-align:center;
+  text-transform:uppercase;
+  text-shadow: capitalize;
+}
+
+
+
+.links{
+  padding: 10px;
+  pading-left: center;
+  position: absolute;
+}
+
+
+.sc-media{
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  color: White !important;
+  padding: 13px 13px;
+
+
+}
+
+
+.fa:hover {
+  font-weight: bold;
+
+
+}
+.fa-linkedin{
+  color: #0072b1 !important;
+}
+
+
+.fa-instagram{
+  color : #bc2a8d !important;
+}
+
+.fa{
+  font-size: 30px !important;
+  font-weight: bold;
+
+}
+
+.main-contact img{
+  min-width: 10%;
+  image-orientation: portrait;
+  border-radius:100%;
+
+}
+
+
+.main-contact{
+  width: 100%;
+  max-width: 95%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 100px;
+
+}
+
+.contact-body{
+  padding: 10px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+
+
+
+/* =====================================
+          Projects Page
+========================== */
+
+.project-body{
+  padding: 10px;
+  margin-top: 90px;
+  background-color:;
+}
+
+
+
+
+
+
+.projects-all{
+  display: flex;
+  flex-direction: row;
+  min-width:20%;
+
+  position:relative;
+
+}
+
+.project-item{
+  padding: 90px;
+  max-width: 33%;
+  min-width:20%;
+
+  position:relative;
+  opacity:0.4;
+  
+}
+
+.project-item img{
+  width: 100%;
+  z-index: -1;
+  border-radius: 90px 10px ;
+  border: 2px solid #4E4374;
+
+  filter: blur(1px);
+
+  overflow: hidden;
+
+}
+
+
+
+
+.pr-text {
+  text-align: center;
+  z-index:1;
+  position:absolute;
+  top: 50% ;
+  left: 50% ;
+  transform : translate(-50%, -50%);
+
+}
+
+.pr-text h1{
+  background-color: #4E4374;
+  font-size: 60px;
+  color: #fff;
+}
+
+
+.dscp{
+  background-color: #4E4374;
+  font-size: 2vw;
+  color: #fff;
+  border-radius: 0px 0px 23px 23px;
+  padding : 0px 0px;
+  visibility: hidden;
+
+}
+
+.dscp1 {
+  visibility: hidden;
+
+  content: 'Console Application with API implementation';
+}
+
+
+.dscp2 {
+  visibility: hidden;
+
+  content: 'A mini Game created with WPF.';
+}
+
+.project-item:hover{
+
+  opacity :1;
+	transform: translateY(-30px);
+
+}
