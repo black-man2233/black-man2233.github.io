@@ -44,6 +44,7 @@ a.nav-btn {
 .menu a {
   margin: 10px;
   /* font-size:20px; */
+  font-size: 30px;
 }
 
 .menu {
@@ -321,7 +322,7 @@ a button:hover {
 .project-body {
   padding: 10px;
   margin-top: 90px;
-  background-color: ;
+
 }
 
 

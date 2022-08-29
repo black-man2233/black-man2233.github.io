@@ -29,14 +29,35 @@
 
   <div class="home-content">
     <h1>Hi i'm Kevin!</h1>
-    <figure class="container">
-      <div class="sun"></div>
-      <div class="earth">
-        <div class="moon"></div>
-      </div>
-    </figure>
+
+    <div class="home-picture">
+      <img id="dummy" class="undragables" src="/Pictures/meoriginal.jpg" alt="me">
+
+    </div>
+
+
     <h1> & Welcome to my Portfolio.</h1>
   </div>
+
+  <script language="javascript" type="text/javascript">
+    var item = document.getElementById("dummy");
+    var music = new Audio("/Music/Runaway.mp3");
+    music.volume =0.1;
+
+    item.addEventListener("mouseover", playMusic, false);
+    item.addEventListener("mouseout", stopMusic, false);
+
+    function playMusic() {
+      music.play();
+    }
+
+    function stopMusic() {
+      music.pause();
+
+    }
+  </script>
+
+
 </body>
 
 </html>
