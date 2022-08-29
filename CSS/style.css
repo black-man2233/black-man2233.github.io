@@ -1,22 +1,22 @@
-
-*{
+* {
   margin: 0px;
-  padding:0px;
+  padding: 0px;
 }
+
 /* =====================================
 Navigationbar
 ====================================> */
 
-.content{
+.content {
   padding-top: 100px;
 
   margin-bottom: 100px;
 }
 
 
-a.nav-btn{
+a.nav-btn {
   color: White !important;
-  background:#a21232;
+  background: #a21232;
   text-decoration: none;
   font-weight: bold;
   padding: 13px 30px;
@@ -24,7 +24,8 @@ a.nav-btn{
   border-radius: 30px;
   transition: .4s
 }
-.navbar{
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,46 +41,35 @@ a.nav-btn{
 }
 
 
-.menu a{
+.menu a {
   margin: 10px;
   /* font-size:20px; */
 }
 
 .menu {
- display: flex;
- gap: 1em;
- font-size: 18px;
- flex-direction: row;
- flex-wrap: wrap;
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
 .menu {
-    background-image: aliceblue;
+  background-image: aliceblue;
 }
 
 .menu a:hover {
- transition: 0.3s ease;
- background: transparent;
- border: 2px solid #dece9c;
- cursor: pointer;
- font-size:15px;
+  transition: 0.3s ease;
+  background: transparent;
+  border: 2px solid #dece9c;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.menu li{
+.menu li {
   padding: 5px 14px;
 }
-
-
-
-
-/* =================================================================*/
-
-
-/* =============
-Home Page
-============= */
-
 
 /* ============= About me Page ============= */
 
@@ -87,9 +77,9 @@ Home Page
 Page arrangement
 ==========================*/
 a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -124,7 +114,8 @@ a:-webkit-any-link {
       Background
 ==========================*/
 
-.website-background, .navbar{
+.website-background,
+.navbar {
   background-color: #1a1831;
 }
 
@@ -182,10 +173,9 @@ span {
   color: #fc3a52;
 
 }
-span:hover {
-  bordertop
-  border-color: gray
 
+span:hover {
+  bordertop border-color: gray
 }
 
 /* ========================
@@ -216,7 +206,7 @@ button {
   padding: 13px 30px;
   border-radius: 30px;
   transition: 0.4s;
-  font-size:15px;
+  font-size: 15px;
   ;
 }
 
@@ -232,7 +222,7 @@ a button:hover {
   Contact me Page
 =============================== */
 
-.main-contact{
+.main-contact {
   width: 100%;
   max-width: 95%;
   display: flex;
@@ -243,16 +233,16 @@ a button:hover {
 
 }
 
-.main-contact img{
+.main-contact img {
   min-width: 10%;
   image-orientation: portrait;
-  border-radius:100%;
+  border-radius: 100%;
 
 }
 
 
 
-.contact-body{
+.contact-body {
   padding: 10px;
   margin: 0px;
   box-sizing: border-box;
@@ -260,35 +250,35 @@ a button:hover {
 }
 
 
-.cc{
+.cc {
 
-  font-size:30px;
+  font-size: 30px;
   font-family: 'Arvo', serif;
-  margin-bottom:33px;
-  color:white;
+  margin-bottom: 33px;
+  color: white;
 }
 
 
-.cm{
-  font-size:40px;
-  margin-bottom:22px;
+.cm {
+  font-size: 40px;
+  margin-bottom: 22px;
   font-family: 'DynaPuff', cursive;
-  text-align:center;
-  text-transform:uppercase;
+  text-align: center;
+  text-transform: uppercase;
   text-shadow: capitalize;
-  color:white;
+  color: white;
 }
 
 
 
-.links{
+.links {
   padding: 10px;
   pading-left: center;
   position: absolute;
 }
 
 
-.sc-media{
+.sc-media {
   width: 100%;
   display: flex;
   align-items: center;
@@ -305,16 +295,17 @@ a button:hover {
 
 
 }
-.fa-linkedin{
+
+.fa-linkedin {
   color: #0072b1 !important;
 }
 
 
-.fa-instagram{
-  color : #bc2a8d !important;
+.fa-instagram {
+  color: #bc2a8d !important;
 }
 
-.fa{
+.fa {
   font-size: 30px !important;
   font-weight: bold;
 
@@ -327,10 +318,10 @@ a button:hover {
           Projects Page
 ========================== */
 
-.project-body{
+.project-body {
   padding: 10px;
   margin-top: 90px;
-  background-color:;
+  background-color: ;
 }
 
 
@@ -338,29 +329,29 @@ a button:hover {
 
 
 
-.projects-all{
+.projects-all {
   display: flex;
   flex-direction: row;
-  min-width:20%;
+  min-width: 20%;
 
-  position:relative;
+  position: relative;
 
 }
 
-.project-item{
+.project-item {
   padding: 90px;
   max-width: 33%;
-  min-width:20%;
+  min-width: 20%;
 
-  position:relative;
-  opacity:0.7;
+  position: relative;
+  opacity: 0.7;
 
 }
 
-.project-item img{
+.project-item img {
   width: 100%;
   z-index: -1;
-  border-radius: 90px 10px ;
+  border-radius: 90px 10px;
   border: 2px solid #4E4374;
 
   filter: blur(1px);
@@ -374,15 +365,15 @@ a button:hover {
 
 .pr-text {
   text-align: center;
-  z-index:1;
-  position:absolute;
-  top: 50% ;
-  left: 50% ;
-  transform : translate(-50%, -50%);
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
-.pr-text h1{
+.pr-text h1 {
   background-color: #4E4374;
   font-size: 60px;
   color: #fff;
@@ -390,9 +381,9 @@ a button:hover {
 
 
 
-.project-item:hover{
+.project-item:hover {
 
-  opacity :1;
-	transform: translateY(-30px);
+  opacity: 1;
+  transform: translateY(-30px);
 
 }
