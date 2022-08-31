@@ -7,6 +7,9 @@
 Navigationbar
 ====================================> */
 
+.navbar {
+  background-color: #1a1831;
+}
 .content {
   padding-top: 100px;
 
@@ -14,50 +17,22 @@ Navigationbar
 }
 
 
-a.nav-btn {
-  color: White !important;
-  background: #a21232;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 13px 30px;
-
-  border-radius: 30px;
-  transition: .4s
-}
-
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 30px;
-
-  z-index: 10000;
+  padding: 20px;
   position: fixed;
-  top: 10px;
+  top: 1px;
   width: 100%;
-
-
-
+  z-index:998;
+  justify-content: center;
 }
 
 
 .menu a {
-  margin: 10px;
+  margin: 12px;
   /* font-size:20px; */
   font-size: 30px;
-}
-
-.menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
-.menu {
-  background-image: aliceblue;
 }
 
 .menu a:hover {
@@ -68,10 +43,17 @@ a.nav-btn {
   font-size: 15px;
 }
 
-.menu li {
-  padding: 5px 14px;
-}
 
+a.nav-btn {
+  color: white !important;
+  background: #a21232;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 30px;
+
+  border-radius: 30px;
+  transition: .4s
+}
 /* ============= About me Page ============= */
 
 /* ========================
@@ -89,10 +71,12 @@ a:-webkit-any-link {
   max-width: 95%;
   margin: auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
+  padding-right: 100px;
+  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
-  padding: 100px
+  align-content: center;
 }
 
 .undragables {
@@ -106,6 +90,7 @@ a:-webkit-any-link {
 
 .about-body {
   padding: 10px;
+  padding-top: 100px;
   margin: 0px;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
@@ -115,15 +100,16 @@ a:-webkit-any-link {
       Background
 ==========================*/
 
-.website-background,
-.navbar {
+.website-background{
   background-color: #1a1831;
+
 }
 
 .about {
   width: 100%;
-  padding: 0;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ========================
@@ -142,24 +128,40 @@ a:-webkit-any-link {
 
 .about-text {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.about-header{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* ========================
   Title
 ==========================*/
-.about-text h1 {
+.about-header h1 {
   color: white;
   font-size: 80px;
   text-transform: capitalize;
   margin-bottom: 20px;
   text-underline-position: below;
   width 120px;
+  border:20px solid ;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
 }
 
 /* ========================
     subtitle
 ==========================*/
-.about-text h5 {
+.about-header h5 {
   color: white;
   font-size: 50px;
   text-transform: capitalize;
@@ -175,9 +177,6 @@ span {
 
 }
 
-span:hover {
-  bordertop border-color: gray
-}
 
 /* ========================
     About me description
@@ -187,12 +186,14 @@ span:hover {
   color: #e3e3e3;
   letter-spacing: 1px;
   line-height: 28px;
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 28px;
-  margin-top: 28px;
-  max-width: 60rem;
-  padding: 0 1em;
-  min-width: 50%;
+}
+
+.about-text a{
+  color: white !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
 }
 
 /* ========================
@@ -222,7 +223,10 @@ a button:hover {
 /* =====================================
   Contact me Page
 =============================== */
-
+.HTML{
+  border:20px solid ;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+}
 .main-contact {
   width: 100%;
   max-width: 95%;
@@ -231,29 +235,27 @@ a button:hover {
   flex-wrap: nowrap;
   align-items: center;
   padding: 100px;
-
 }
 
 .main-contact img {
-  min-width: 10%;
+  min-width: 15%;
   image-orientation: portrait;
   border-radius: 100%;
 
 }
-
-
 
 .contact-body {
   padding: 10px;
   margin: 0px;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
 }
 
 
 .cc {
 
-  font-size: 30px;
+  font-size: 32px;
   font-family: 'Arvo', serif;
   margin-bottom: 33px;
   color: white;
@@ -268,6 +270,7 @@ a button:hover {
   text-transform: uppercase;
   text-shadow: capitalize;
   color: white;
+
 }
 
 
@@ -306,85 +309,12 @@ a button:hover {
   color: #bc2a8d !important;
 }
 
+.fa-github {
+  color: white !important;
+}
+
 .fa {
   font-size: 30px !important;
   font-weight: bold;
-
-}
-
-
-
-
-/* =====================================
-          Projects Page
-========================== */
-
-.project-body {
-  padding: 10px;
-  margin-top: 90px;
-
-}
-
-
-
-
-
-
-.projects-all {
-  display: flex;
-  flex-direction: row;
-  min-width: 20%;
-
-  position: relative;
-
-}
-
-.project-item {
-  padding: 90px;
-  max-width: 33%;
-  min-width: 20%;
-
-  position: relative;
-  opacity: 0.7;
-
-}
-
-.project-item img {
-  width: 100%;
-  z-index: -1;
-  border-radius: 90px 10px;
-  border: 2px solid #4E4374;
-
-  filter: blur(1px);
-
-  overflow: hidden;
-
-}
-
-
-
-
-.pr-text {
-  text-align: center;
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-.pr-text h1 {
-  background-color: #4E4374;
-  font-size: 60px;
-  color: #fff;
-}
-
-
-
-.project-item:hover {
-
-  opacity: 1;
-  transform: translateY(-30px);
 
 }
